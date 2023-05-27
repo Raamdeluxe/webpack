@@ -20,6 +20,21 @@ const submitBtn = document.createElement("button");
 submitBtn.setAttribute("type", "submit");
 submitBtn.innerText = "Submit";
 
+// add a event listener to the form
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	const formData = new FormData(form);
+	const name = formData.get("name");
+	const email = formData.get("email");
+	sessionStorage.setItem("formData", JSON.stringify({ name, email }));
+	console.log(name, email);
+
+	// reset form fields
+	form.reset();
+	nameInput.value = "";
+	emailInput.value = "";
+});
+
 // append all the elements to the form
 form.appendChild(nameInput);
 form.appendChild(emailInput);

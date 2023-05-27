@@ -562,7 +562,6 @@ nameInput.setAttribute("placeholder", "Enter your name");
 
 // create a input element for email
 var emailInput = document.createElement("input");
-x;
 emailInput.setAttribute("type", "email");
 emailInput.setAttribute("name", "email");
 emailInput.setAttribute("placeholder", "Enter your email");
@@ -571,6 +570,24 @@ emailInput.setAttribute("placeholder", "Enter your email");
 var submitBtn = document.createElement("button");
 submitBtn.setAttribute("type", "submit");
 submitBtn.innerText = "Submit";
+
+// add a event listener to the form
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var formData = new FormData(form);
+  var name = formData.get("name");
+  var email = formData.get("email");
+  sessionStorage.setItem("formData", JSON.stringify({
+    name: name,
+    email: email
+  }));
+  console.log(name, email);
+
+  // reset form fields
+  form.reset();
+  nameInput.value = "";
+  emailInput.value = "";
+});
 
 // append all the elements to the form
 form.appendChild(nameInput);
@@ -583,4 +600,4 @@ document.body.appendChild(form);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle97afc392b7a5a10e5df7.js.map
+//# sourceMappingURL=bundle1bae352c27d90ede38ab.js.map
