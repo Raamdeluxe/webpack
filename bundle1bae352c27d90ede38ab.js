@@ -571,6 +571,24 @@ var submitBtn = document.createElement("button");
 submitBtn.setAttribute("type", "submit");
 submitBtn.innerText = "Submit";
 
+// add a event listener to the form
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var formData = new FormData(form);
+  var name = formData.get("name");
+  var email = formData.get("email");
+  sessionStorage.setItem("formData", JSON.stringify({
+    name: name,
+    email: email
+  }));
+  console.log(name, email);
+
+  // reset form fields
+  form.reset();
+  nameInput.value = "";
+  emailInput.value = "";
+});
+
 // append all the elements to the form
 form.appendChild(nameInput);
 form.appendChild(emailInput);
@@ -582,4 +600,4 @@ document.body.appendChild(form);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle73cbdce3fca1608d67d2.js.map
+//# sourceMappingURL=bundle1bae352c27d90ede38ab.js.map
