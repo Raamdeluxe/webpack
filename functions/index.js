@@ -30,10 +30,11 @@ exports.sendEmail = functions.firestore
 
 		const msg = {
 			to: newValue.email,
+			cc: "info@raamdeluxe.nl",
 			from: "info@raamdeluxe.nl", // Use the email address or domain you verified with SendGrid
 			subject: "New Form Submission",
-			text: `Hello ${newValue.name}, thank you for your submission.`,
-			html: `<p>Hello <strong>${newValue.name}</strong>,<br><br>Thank you for your submission. We will get back to you soon.<br><br>Best regards,<br>Your Team</p>`,
+			text: `Hello ${newValue.name}, thank you for your submission. Your estimated price based on the provided width and height is €${newValue.price}.`,
+			html: `<p>Hello <strong>${newValue.name}</strong>,<br><br>Thank you for your submission. Your estimated price based on the provided width and height is <strong>€${newValue.price}</strong>.<br><br>Best regards,<br>Raamdeluxe</p>`,
 		};
 
 		return sgMail.send(msg);
