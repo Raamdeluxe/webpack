@@ -26670,7 +26670,7 @@ submitBtn.addEventListener("click", /*#__PURE__*/function () {
 
           // Fetch the JSON file
           _context.next = 7;
-          return fetch("https://raw.githubusercontent.com/Raamdeluxe/test/main/data/price.json");
+          return fetch("https://raw.githubusercontent.com/Raamdeluxe/webpack/main/src/data/price.json");
         case 7:
           response = _context.sent;
           _context.next = 10;
@@ -26774,4 +26774,4 @@ document.body.appendChild(form);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef77737965ac932e2638d.js.map
+//# sourceMappingURL=bundle07343fca808c7a18278c.js.map
