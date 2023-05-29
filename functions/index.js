@@ -34,7 +34,7 @@ exports.sendEmail = functions.firestore
 			from: "info@raamdeluxe.nl", // Use the email address or domain you verified with SendGrid
 			subject: "New Form Submission",
 			text: `Hello ${newValue.name}, thank you for your submission. Your estimated price based on the provided width and height is €${newValue.price}.`,
-			html: `<p>Hello <strong>${newValue.name}</strong>,<br><br>Thank you for your submission. Your estimated price based on the provided width and height is <strong>€${newValue.price}</strong>.<br><br>Best regards,<br>Raamdeluxe</p>`,
+			html: `<p>Hello <strong>${newValue.name}</strong>,<br><br>Thank you for your submission. Your estimated price based on the provided width (${newValue.width} cm) and height (${newValue.height} cm) is <strong>€${newValue.price}</strong>.<br><br>Best regards,<br>Raamdeluxe</p>`,
 		};
 
 		return sgMail.send(msg);

@@ -93,7 +93,7 @@ submitBtn.addEventListener("click", async (e) => {
 
 	// Fetch the JSON file
 	const response = await fetch(
-		"https://raw.githubusercontent.com/Raamdeluxe/test/main/data/price.json"
+		"https://raw.githubusercontent.com/Raamdeluxe/webpack/main/src/data/price.json"
 	);
 
 	const data = await response.json();
