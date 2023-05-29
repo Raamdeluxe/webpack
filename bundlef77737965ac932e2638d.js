@@ -23765,7 +23765,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n}\n\n/* Center the form */\nform {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\n\n/* Style the input fields */\ninput[type=text],\ninput[type=email] {\n  padding: 10px;\n  margin-bottom: 10px;\n  width: 50%;\n  box-sizing: border-box;\n}\n\n/* Style the submit button */\nbutton[type=submit] {\n  padding: 10px 20px;\n  background-color: #4caf50;\n  color: white;\n  border: none;\n  cursor: pointer;\n  width: 50%;\n}", "",{"version":3,"sources":["webpack://./src/styles/form.scss"],"names":[],"mappings":"AAAA;EACC,YAAA;EACA,aAAA;EACA,SAAA;AACD;;AAEA,oBAAA;AACA;EACC,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;AACD;;AAEA,2BAAA;AACA;;EAEC,aAAA;EACA,mBAAA;EACA,UAAA;EACA,sBAAA;AACD;;AAEA,4BAAA;AACA;EACC,kBAAA;EACA,yBAAA;EACA,YAAA;EACA,YAAA;EACA,eAAA;EACA,UAAA;AACD","sourcesContent":["body {\n\twidth: 100vw;\n\theight: 100vh;\n\tmargin: 0;\n}\n\n/* Center the form */\nform {\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\tjustify-content: center;\n\theight: 100vh;\n}\n\n/* Style the input fields */\ninput[type=\"text\"],\ninput[type=\"email\"] {\n\tpadding: 10px;\n\tmargin-bottom: 10px;\n\twidth: 50%;\n\tbox-sizing: border-box;\n}\n\n/* Style the submit button */\nbutton[type=\"submit\"] {\n\tpadding: 10px 20px;\n\tbackground-color: #4caf50;\n\tcolor: white;\n\tborder: none;\n\tcursor: pointer;\n\twidth: 50%;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  padding: 20px;\n  box-sizing: border-box;\n}\n\n.form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 100%;\n  max-width: 500px;\n  padding: 20px;\n  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\n}\n\n.step1,\n.step2 {\n  width: 100%;\n}\n\ninput {\n  width: 100%;\n  padding: 10px;\n  margin-bottom: 10px;\n  border: 1px solid #ddd;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\n.button-container {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n}\n\nbutton {\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n  background-color: #007bff;\n  color: #fff;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n}\nbutton:hover {\n  background-color: #0056b3;\n}", "",{"version":3,"sources":["webpack://./src/styles/form.scss"],"names":[],"mappings":"AAAA;EACC,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,SAAA;EACA,aAAA;EACA,sBAAA;AACD;;AAEA;EACC,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,2CAAA;AACD;;AAEA;;EAEC,WAAA;AACD;;AAEA;EACC,WAAA;EACA,aAAA;EACA,mBAAA;EACA,sBAAA;EACA,kBAAA;EACA,sBAAA;AACD;;AAEA;EACC,aAAA;EACA,8BAAA;EACA,WAAA;AACD;;AAEA;EACC,kBAAA;EACA,YAAA;EACA,kBAAA;EACA,yBAAA;EACA,WAAA;EACA,eAAA;EACA,sCAAA;AACD;AACC;EACC,yBAAA;AACF","sourcesContent":["body {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\twidth: 100vw;\n\theight: 100vh;\n\tmargin: 0;\n\tpadding: 20px;\n\tbox-sizing: border-box;\n}\n\n.form {\n\tdisplay: flex;\n\tflex-direction: column;\n\talign-items: center;\n\twidth: 100%;\n\tmax-width: 500px;\n\tpadding: 20px;\n\tbox-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);\n}\n\n.step1,\n.step2 {\n\twidth: 100%;\n}\n\ninput {\n\twidth: 100%;\n\tpadding: 10px;\n\tmargin-bottom: 10px;\n\tborder: 1px solid #ddd;\n\tborder-radius: 5px;\n\tbox-sizing: border-box;\n}\n\n.button-container {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\twidth: 100%;\n}\n\nbutton {\n\tpadding: 10px 20px;\n\tborder: none;\n\tborder-radius: 5px;\n\tbackground-color: #007bff;\n\tcolor: #fff;\n\tcursor: pointer;\n\ttransition: background-color 0.3s ease;\n\n\t&:hover {\n\t\tbackground-color: #0056b3;\n\t}\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -26568,58 +26568,210 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_form_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/form.scss */ "./src/styles/form.scss");
 /* harmony import */ var _firebaseinit_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./firebaseinit.js */ "./src/firebaseinit.js");
 /* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 
 
-// create a form element
+// Create a form
 var form = document.createElement("form");
 form.classList.add("form");
 
-// create an input element for name
+// Create the first step
+var step1 = document.createElement("div");
+step1.classList.add("step1");
+
+// Create the width input
+var widthInput = document.createElement("input");
+widthInput.setAttribute("type", "number");
+widthInput.setAttribute("name", "width");
+widthInput.setAttribute("placeholder", "Width: Min 60 cm - Max 200 cm");
+
+// Create the height input
+var heightInput = document.createElement("input");
+heightInput.setAttribute("type", "number");
+heightInput.setAttribute("name", "height");
+heightInput.setAttribute("placeholder", "Height: Min 100 cm - Max 300 cm");
+
+// Create the next button
+var nextBtn = document.createElement("button");
+nextBtn.setAttribute("type", "button");
+nextBtn.innerText = "Next";
+
+// Add an event listener to the next button
+nextBtn.addEventListener("click", function () {
+  // Hide the first step
+  step1.style.display = "none";
+  // Show the second step
+  step2.style.display = "block";
+});
+
+// Append the elements to the first step
+step1.appendChild(widthInput);
+step1.appendChild(heightInput);
+step1.appendChild(nextBtn);
+
+// Append the first step to the form
+form.appendChild(step1);
+
+// Create the second step
+var step2 = document.createElement("div");
+step2.classList.add("step2");
+step2.style.display = "none";
+
+// Create the name input
 var nameInput = document.createElement("input");
 nameInput.setAttribute("type", "text");
 nameInput.setAttribute("name", "name");
-nameInput.setAttribute("placeholder", "Enter your name");
+nameInput.setAttribute("placeholder", "Name");
 
-// create an input element for email
+// Create the email input
 var emailInput = document.createElement("input");
 emailInput.setAttribute("type", "email");
 emailInput.setAttribute("name", "email");
-emailInput.setAttribute("placeholder", "Enter your email");
+emailInput.setAttribute("placeholder", "Email");
 
-// create a submit button
+// Create the back button
+var backBtn = document.createElement("button");
+backBtn.setAttribute("type", "button");
+backBtn.innerText = "Back";
+
+// Add an event listener to the back button
+backBtn.addEventListener("click", function () {
+  // Hide the second step
+  step2.style.display = "none";
+  // Show the first step
+  step1.style.display = "block";
+});
+
+// Create the submit button
 var submitBtn = document.createElement("button");
 submitBtn.setAttribute("type", "submit");
 submitBtn.innerText = "Submit";
 
-// append all the elements to the form
-form.appendChild(nameInput);
-form.appendChild(emailInput);
-form.appendChild(submitBtn);
+// Add an event listener to the submit button
+// Add an event listener to the submit button
+submitBtn.addEventListener("click", /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(e) {
+    var width, height, response, data, widthKeys, heightKeys, price, name, email;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          e.preventDefault();
 
-// append the form to the body
-document.body.appendChild(form);
-submitBtn.addEventListener("click", function (e) {
-  e.preventDefault();
+          // Get the width and height values from the input fields
+          width = widthInput.value;
+          height = heightInput.value; // Parse the input values as floats
+          width = parseFloat(width);
+          height = parseFloat(height);
 
-  // Get the form input values
-  var name = nameInput.value;
-  var email = emailInput.value;
+          // Fetch the JSON file
+          _context.next = 7;
+          return fetch("https://raw.githubusercontent.com/Raamdeluxe/test/main/data/price.json");
+        case 7:
+          response = _context.sent;
+          _context.next = 10;
+          return response.json();
+        case 10:
+          data = _context.sent;
+          if (!(width < 60 || height < 60)) {
+            _context.next = 18;
+            break;
+          }
+          // Find the nearest width and height key values in the JSON file
+          widthKeys = Object.keys(data);
+          heightKeys = Object.keys(data[widthKeys[0]]);
+          width = findNearestValue(width, widthKeys);
+          height = findNearestValue(height, heightKeys);
+          _context.next = 24;
+          break;
+        case 18:
+          if (!(width >= 200 || height > 300)) {
+            _context.next = 23;
+            break;
+          }
+          // Display an error message in the console
+          console.error("Width or height is too high!");
+          return _context.abrupt("return");
+        case 23:
+          if (width >= 190) {
+            // Round the values down to the nearest ten
+            width = Math.floor(width / 10) * 10;
+            height = Math.floor(height / 10) * 10;
+          } else {
+            // Round the values up to the nearest ten
+            width = Math.ceil(width / 10) * 10;
+            height = Math.ceil(height / 10) * 10;
+          }
+        case 24:
+          // Get the price based on the rounded width and height
+          price = data[width][height]; // Log the calculated price to the console
+          console.log("Calculated price: \u20AC ".concat(price));
 
-  // Store the form data in Firestore
-  (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_2__.addDoc)(_firebaseinit_js__WEBPACK_IMPORTED_MODULE_1__.colRef, {
-    name: name,
-    email: email
-  }).then(function () {
-    console.log("Form data stored in Firebase");
-    form.reset();
-  })["catch"](function (error) {
-    console.error("Error storing form data: ", error);
+          // Log the rounded values to the console
+          console.log("Rounded width: ".concat(width));
+          console.log("Rounded height: ".concat(height));
+          console.log("Price: ".concat(price));
+
+          // Get the form input values
+          name = nameInput.value;
+          email = emailInput.value; // Store the form data in Firestore
+          (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_2__.addDoc)(_firebaseinit_js__WEBPACK_IMPORTED_MODULE_1__.colRef, {
+            name: name,
+            email: email,
+            width: width,
+            height: height,
+            price: price
+          }).then(function () {
+            console.log("Form data stored in Firebase");
+            form.reset();
+          })["catch"](function (error) {
+            console.error("Error storing form data: ", error);
+          });
+
+          // Reset the form
+          form.reset();
+        case 33:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}());
+
+// Helper function to find the nearest value in an array
+function findNearestValue(value, array) {
+  return array.reduce(function (prev, curr) {
+    return Math.abs(curr - value) < Math.abs(prev - value) ? curr : prev;
   });
-});
+}
+
+// Create the button container
+var buttonContainer = document.createElement("div");
+buttonContainer.classList.add("button-container");
+
+// Append the buttons to the button container
+buttonContainer.appendChild(backBtn);
+buttonContainer.appendChild(submitBtn);
+
+// Append the elements to the second step
+step2.appendChild(nameInput);
+step2.appendChild(emailInput);
+step2.appendChild(buttonContainer);
+
+// Append the second step to the form
+form.appendChild(step2);
+
+// Append the form to the body
+document.body.appendChild(form);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle54ececa92c3ad2fb7443.js.map
+//# sourceMappingURL=bundlef77737965ac932e2638d.js.map
